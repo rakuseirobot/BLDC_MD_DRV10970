@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J?
-U 1 1 5F0FEE49
-P 1300 1200
-F 0 "J?" H 1350 1617 50  0000 C CNN
-F 1 "MIL02x06" H 1350 1526 50  0000 C CNN
-F 2 "" H 1300 1200 50  0001 C CNN
-F 3 "~" H 1300 1200 50  0001 C CNN
-	1    1300 1200
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1100 1400
 Wire Wire Line
 	1100 1000 750  1000
@@ -76,7 +65,7 @@ Text Label 750  1500 0    50   ~ 0
 HALL_C_N
 Text Label 1950 1500 2    50   ~ 0
 HALL_C_P
-Text Notes 1100 1650 0    50   ~ 0
+Text Notes 1100 1750 0    50   ~ 0
 BLDC_Connect
 $Comp
 L power:+5V #PWR?
@@ -89,4 +78,17 @@ F 3 "" H 2250 1300 50  0001 C CNN
 	1    2250 1300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J?
+U 1 1 5F105BC7
+P 1300 1300
+F 0 "J?" H 1350 1817 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 1350 1726 50  0000 C CNN
+F 2 "" H 1300 1300 50  0001 C CNN
+F 3 "~" H 1300 1300 50  0001 C CNN
+	1    1300 1300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1100 1600
+NoConn ~ 1600 1600
 $EndSCHEMATC
