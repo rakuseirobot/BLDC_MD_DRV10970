@@ -81,16 +81,14 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x07_Odd_Even J1
 U 1 1 5F105BC7
-P 1900 1400
-F 0 "J1" H 1950 1917 50  0000 C CNN
-F 1 "MIL 02x07" H 1950 1826 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Horizontal" H 1900 1400 50  0001 C CNN
-F 3 "~" H 1900 1400 50  0001 C CNN
-	1    1900 1400
-	1    0    0    -1  
+P 2000 1300
+F 0 "J1" H 2050 1817 50  0000 C CNN
+F 1 "MIL 02x07" H 2050 1726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Horizontal" H 2000 1300 50  0001 C CNN
+F 3 "~" H 2000 1300 50  0001 C CNN
+	1    2000 1300
+	-1   0    0    1   
 $EndComp
-NoConn ~ 1700 1700
-NoConn ~ 2200 1700
 $Comp
 L Device:C C1
 U 1 1 5F10D18A
@@ -106,19 +104,6 @@ Wire Wire Line
 	4100 4200 4100 4000
 Wire Wire Line
 	4100 4000 4000 4000
-$Comp
-L Device:C C2
-U 1 1 5F11273F
-P 6650 4450
-F 0 "C2" H 6536 4404 50  0000 R CNN
-F 1 "10uF" H 6536 4495 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6688 4300 50  0001 C CNN
-F 3 "~" H 6650 4450 50  0001 C CNN
-	1    6650 4450
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	6650 4600 6650 4650
 $Comp
 L power:GND #PWR019
 U 1 1 5F113D34
@@ -143,9 +128,6 @@ F 3 "~" H 7100 4450 50  0001 C CNN
 	1    7100 4450
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	6650 4300 7100 4300
-Connection ~ 6650 4300
 Wire Wire Line
 	7100 4600 7100 4750
 Text Label 7100 4750 1    50   ~ 0
@@ -535,8 +517,6 @@ Wire Wire Line
 	6300 4500 5950 4500
 Wire Wire Line
 	6300 4400 5950 4400
-Wire Wire Line
-	5950 4300 6650 4300
 Wire Wire Line
 	5950 4200 7850 4200
 Wire Wire Line
@@ -1126,4 +1106,24 @@ Wire Notes Line
 	10650 5450 3550 5450
 Text Notes 5400 5600 0    50   ~ 0
 DRV10970
+NoConn ~ 1700 1000
+NoConn ~ 2200 1000
+Wire Wire Line
+	6650 4600 6650 4650
+Wire Wire Line
+	5950 4300 6650 4300
+Wire Wire Line
+	6650 4300 7100 4300
+Connection ~ 6650 4300
+$Comp
+L Device:C C2
+U 1 1 5F11273F
+P 6650 4450
+F 0 "C2" H 6536 4404 50  0000 R CNN
+F 1 "10uF" H 6536 4495 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6688 4300 50  0001 C CNN
+F 3 "~" H 6650 4450 50  0001 C CNN
+	1    6650 4450
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
